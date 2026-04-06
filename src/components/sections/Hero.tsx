@@ -97,7 +97,7 @@ export function Hero() {
           Build a 90-Day<br />Lead System.
         </div>
 
-        <p className="hero-desc" style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.8, maxWidth: 520, marginBottom: "2.5rem", fontWeight: 300 }} className="hero-desc">
+        <p className="hero-desc" style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.8, maxWidth: 520, marginBottom: "2.5rem", fontWeight: 300 }} >
           A complete customer acquisition system &mdash; Meta Ads, Google Ads, Local SEO, GMB, YouTube & WhatsApp AI &mdash; to generate qualified enquiries and scale your business. We handle marketing. You focus on growth.
         </p>
 

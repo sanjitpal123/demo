@@ -1,0 +1,560 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  /* === Goadslive Brand Palette === */
+  --color-g1: #f5a623;
+  --color-g2: #e8890d;
+  --color-g3: #ffd47a;
+  --color-bg2: #0d0f12;
+  --color-bg3: #131518;
+  --color-card: #181a1e;
+  --color-brd: rgba(245, 166, 35, 0.18);
+  --color-green: #2ecc71;
+  --color-red: #e74c3c;
+
+  /* === Marquee Animations === */
+  --duration: 40s;
+  --gap: 1rem;
+  --animate-marquee: marquee var(--duration) linear infinite;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+}
+
+:root {
+  --background: #080809;
+  --foreground: #ffffff;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  width: 100%;
+  position: relative;
+  /* Premium typography scaling */
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Gradient text utility */
+.grad {
+  background: linear-gradient(110deg, #f5a623, #ffd47a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* =============================================================
+   RESPONSIVE — TABLET & MOBILE ONLY
+   Desktop (>1024px) is completely untouched.
+   ============================================================= */
+
+/* ─── TABLET (≤1024px) ────────────────────────────────────────── */
+@media (max-width: 1024px) {
+
+  /* Hero → single column */
+  #hero {
+    grid-template-columns: 1fr !important;
+    padding: 130px 6% 60px !important;
+  }
+
+  .hero-left {
+    padding-right: 0 !important;
+  }
+
+  /* Hero heading text scaling */
+  .hero-heading-text {
+    font-size: 2.2rem !important;
+    line-height: 1 !important;
+  }
+
+  .hero-price-text {
+    font-size: 4rem !important;
+    text-align: start;
+  }
+
+  .hero-price-row svg {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+  }
+
+  /* Process → single column */
+  .process-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  /* Offer → single column */
+  .offer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+
+  .offer-pricing {
+    position: relative !important;
+    top: auto !important;
+  }
+
+  /* Results stats → 2 columns */
+  .results-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2rem !important;
+  }
+
+  /* Eligibility → single column */
+  .eligibility-grid {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+
+  /* Services CTA bar → stack */
+  .services-cta-bar {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 1rem !important;
+  }
+
+  /* CTA trust signals → tighter */
+  .cta-signals {
+    gap: 2rem !important;
+  }
+
+  /* Features grid → tweak for tablet */
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2rem !important;
+  }
+
+  /* Reviews heading */
+  .reviews-heading {
+    font-size: 2.5rem !important;
+  }
+
+  /* Velocity banner text */
+  .velocity-text {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .changingHeading {
+    margin-left: 1rem;
+  }
+
+  .hero-desc {
+    text-align: center;
+  }
+
+  .textcenter {
+    text-align: center !important;
+  }
+
+  .textleft {
+    text-align: start !important;
+  }
+
+  .textsize {
+    font-size: 16px !important;
+  }
+}
+
+/* ─── MOBILE (≤768px) ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* ---------- Navbar ---------- */
+  .navbar-tagline {
+    display: none !important;
+  }
+
+  .node-connections-wrapper {
+    display: none;
+  }
+
+  .changingHeading {
+    margin-left: 43px !important;
+  }
+
+  .hero-subtitle {
+    text-align: center;
+  }
+
+  .hero-price-text {
+    text-align: center !important;
+  }
+
+  .navbar-buttons button {
+    padding: 0.35rem 0.7rem !important;
+    font-size: 0.58rem !important;
+  }
+
+  /* ---------- TopBar ---------- */
+  .topbar-text {
+    font-size: 0.45rem !important;
+    letter-spacing: 0.04em !important;
+  }
+
+  /* ---------- Hero ---------- */
+  #hero {
+    padding: 110px 5% 40px !important;
+    min-height: auto !important;
+  }
+
+  #hero h1 {
+    margin-bottom: 0.3rem !important;
+  }
+
+  .hero-badge {
+    padding: 0.4rem 0.9rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .hero-badge .text-\[0\.7rem\] {
+    font-size: 0.55rem !important;
+  }
+
+  .hero-heading-text {
+    font-size: 2.6rem !important;
+    line-height: 1 !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  .hero-price-row {
+    gap: 0 !important;
+  }
+
+  .hero-price-row svg {
+    width: 3.2rem !important;
+    height: 3.2rem !important;
+  }
+
+  .hero-price-text {
+    font-size: 4.2rem !important;
+    letter-spacing: -0.03em !important;
+    line-height: 0.9 !important;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+
+  .hero-desc {
+    font-size: 0.82rem !important;
+    margin-bottom: 1.8rem !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column !important;
+    gap: 8px !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .hero-buttons button {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+    padding: 0.9rem 1.5rem !important;
+    font-size: 0.78rem !important;
+  }
+
+  .hero-trust {
+    flex-wrap: wrap !important;
+    line-height: 2 !important;
+    margin-bottom: 2rem !important;
+    font-size: 0.68rem !important;
+  }
+
+  .hero-stats {
+    gap: 2rem !important;
+    padding-top: 2rem !important;
+    flex-wrap: wrap !important;
+  }
+
+  .hero-stats>div>div:first-child {
+    font-size: 1.8rem !important;
+  }
+
+  /* ---------- Section padding — mobile ---------- */
+  #about,
+  #features,
+  #process,
+  #offer,
+  #results,
+  #eligibility,
+  #exclusive,
+  #faq,
+  .services-section {
+    padding: 30px 5% !important;
+  }
+
+  #cta {
+    padding: 80px 5% !important;
+  }
+
+  #how-we-work {
+    padding: 60px 5% !important;
+  }
+
+  /* ---------- About ---------- */
+  .about-bottom {
+    margin-top: 5rem !important;
+  }
+
+  /* ---------- Services ---------- */
+  .services-cta-bar {
+    padding: 1.2rem 1.5rem !important;
+  }
+
+  .services-cta-bar button {
+    width: 100% !important;
+  }
+
+  .services-heading {
+    font-size: 2.2rem !important;
+  }
+
+  .node-connections-wrapper {
+    transform: scale(0.85);
+    transform-origin: center;
+  }
+
+  /* ---------- Process ---------- */
+  .process-grid {
+    gap: 1.5rem !important;
+  }
+
+  .process-funnel-label {
+    margin-left: 0 !important;
+  }
+
+  .process-step {
+    padding: 1.5rem !important;
+  }
+
+  /* ---------- Offer ---------- */
+  .offer-grid {
+    gap: 2rem !important;
+  }
+
+  .offer-card {
+    padding: 1.5rem !important;
+  }
+
+  .offer-pricing-inner {
+    padding: 1.5rem 1.2rem !important;
+  }
+
+  .offer-price-row {
+    font-size: 3.5rem !important;
+  }
+
+  .offer-rupee {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+
+  /* ---------- Results ---------- */
+  .results-stats {
+    gap: 1rem !important;
+    margin-bottom: 4rem !important;
+  }
+
+  .results-stats>div {
+    padding: 1.5rem 1rem !important;
+  }
+
+  .results-stats>div>div:first-child {
+    font-size: 2rem !important;
+  }
+
+  .results-testimonials {
+    height: 400px !important;
+  }
+
+  /* ---------- Features ---------- */
+  .features-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .features-grid>div {
+    padding: 2.5rem 2rem !important;
+  }
+
+  /* ---------- Eligibility ---------- */
+  .eligibility-grid {
+    gap: 2rem !important;
+  }
+
+  .eligibility-card {
+    padding: 2.5rem 2rem !important;
+  }
+
+  /* ---------- Exclusive Slots ---------- */
+  .slot-indicators {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  /* ---------- CTA ---------- */
+  .cta-buttons {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .cta-buttons button {
+    width: 100% !important;
+    max-width: 340px !important;
+  }
+
+  .cta-signals {
+    gap: 1rem !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* ---------- Reviews ---------- */
+  .reviews-heading {
+    font-size: 1.8rem !important;
+  }
+
+  .reviews-section {
+    padding: 60px 0 !important;
+    min-height: auto !important;
+  }
+
+  /* ---------- Velocity Banner ---------- */
+  .velocity-text {
+    font-size: 1.8rem !important;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    flex-direction: column !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+  }
+
+  footer>div:first-child {
+    justify-content: center !important;
+  }
+}
+
+/* ─── SMALL MOBILE (≤480px) ───────────────────────────────────── */
+@media (max-width: 480px) {
+  .hero-price-text {
+    font-size: 3.6rem !important;
+  }
+
+  .hero-price-row svg {
+    width: 2.6rem !important;
+    height: 2.6rem !important;
+  }
+
+  .hero-stats {
+    gap: 1.5rem !important;
+  }
+
+  .hero-stats>div>div:first-child {
+    font-size: 1.5rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1.55rem !important;
+    margin-top: 1.2rem !important;
+  }
+
+  .results-testimonials {
+    height: 320px !important;
+  }
+
+  .reviews-heading {
+    font-size: 1.5rem !important;
+  }
+
+  .velocity-text {
+    font-size: 1.4rem !important;
+  }
+
+  .topbar-text {
+    font-size: 0.4rem !important;
+  }
+
+  .hero-heading-text {
+    font-size: 2.2rem !important;
+  }
+
+  .hero-right {
+    margin-top: 1rem;
+  }
+
+  #hero h1 {
+    font-size: 0.9rem !important;
+  }
+
+  .offer-price-row {
+    font-size: 2.8rem !important;
+  }
+
+  .services-heading {
+    font-size: 1.8rem !important;
+  }
+
+  .node-connections-wrapper {
+    transform: scale(0.65);
+  }
+}

@@ -117,7 +117,7 @@ export function Hero() {
             Book Free Strategy Call <motion.span animate={{ x: [0, 4, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}></motion.span>
           </button>
           <button
-            onClick={() => window.open("https://wa.me/919748228157", "_blank")}
+            onClick={() => window.open("https://wa.me/917439469915", "_blank")}
             style={{
               background: "transparent", color: "#fff",
               border: "1px solid rgba(255,255,255,0.3)",

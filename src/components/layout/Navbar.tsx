@@ -35,7 +35,7 @@ export function Navbar() {
       {/* Buttons */}
       <div className="navbar-buttons" style={{ display: "flex", gap: 8, alignItems: "center" }}>
         <button
-          onClick={() => window.open("https://wa.me/919748228157", "_blank")}
+          onClick={() => window.open("https://wa.me/917439469915", "_blank")}
           style={{
             background: "rgba(37, 211, 102, 0.1)",
             border: "1px solid rgba(37, 211, 102, 0.5)",

@@ -4,6 +4,24 @@ import { Marquee } from "../ui/marquee";
 
 const reviews = [
   {
+    name: "Suresh Yadav",
+    username: "Digital Marketing · Kolkata",
+    body: "Go Ads Live is an excellent digital marketing agency based in Kolkata. Their team is highly professional, creative, and result-oriented. From social media marketing to paid advertising campaigns, they deliver strategies that actually drive real growth for businesses. The most important thing is their communication is clear and transparency as well. Good environment to work with them.",
+    img: "https://avatar.vercel.sh/suresh",
+  },
+  {
+    name: "Bengal Fencing",
+    username: "Manufacturing · Kolkata",
+    body: "The team is professional, responsive, and really understands how to deliver result. Love the result for my business.",
+    img: "https://avatar.vercel.sh/bengal-f",
+  },
+  {
+    name: "Business Owner",
+    username: "Growth · Kolkata",
+    body: "Happy with the work . I am highly recommended for anyone looking to grow their business online go with GO ADS LIVE",
+    img: "https://avatar.vercel.sh/business",
+  },
+  {
     name: "Owner, Irfa Family Salon",
     username: "Salon · Kolkata",
     body: "Within 45 days we were getting consistent walk-ins. The WhatsApp system handles follow-ups automatically — we just focus on the service.",

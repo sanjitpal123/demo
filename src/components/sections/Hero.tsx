@@ -114,10 +114,10 @@ export function Hero() {
               display: "flex", alignItems: "center", gap: 8, whiteSpace: "nowrap"
             }}
           >
-            Book Free Strategy Call <motion.span animate={{ x: [0, 4, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>\u2192</motion.span>
+            Book Free Strategy Call <motion.span animate={{ x: [0, 4, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}></motion.span>
           </button>
           <button
-            onClick={() => window.open("https://wa.me/", "_blank")}
+            onClick={() => window.open("https://wa.me/919748228157", "_blank")}
             style={{
               background: "transparent", color: "#fff",
               border: "1px solid rgba(255,255,255,0.3)",

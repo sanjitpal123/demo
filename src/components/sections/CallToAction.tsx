@@ -69,7 +69,7 @@ export function CallToAction() {
 
         <div className="cta-buttons" style={{ display: "flex", justifyContent: "center", gap: "1rem", flexWrap: "wrap", marginBottom: "4rem" }}>
           <button
-            onClick={() => window.open("https://wa.me/", "_blank")}
+            onClick={() => window.location.href = "tel:+919748228157"}
             style={{
               background: "linear-gradient(135deg, #f5a623, #e8890d)", color: "#000",
               border: "none", padding: "1.2rem 3rem", fontSize: "13px",
@@ -78,10 +78,10 @@ export function CallToAction() {
               borderRadius: "8px", boxShadow: "0 15px 40px rgba(245,166,35,0.3)"
             }}
           >
-            Claim Your Free Audit
+            Claim Your Free Audit Score
           </button>
           <button
-            onClick={() => window.open("https://wa.me/", "_blank")}
+            onClick={() => window.open("https://wa.me/919748228157", "_blank")}
             style={{
               background: "transparent", color: "#fff",
               border: "1px solid rgba(255,255,255,0.2)",

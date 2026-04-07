@@ -35,19 +35,29 @@ export function Navbar() {
       {/* Buttons */}
       <div className="navbar-buttons" style={{ display: "flex", gap: 8, alignItems: "center" }}>
         <button
-          onClick={() => window.open("https://wa.me/", "_blank")}
+          onClick={() => window.open("https://wa.me/919748228157", "_blank")}
           style={{
-            background: "transparent",
-            border: "1px solid rgba(255,255,255,0.07)",
-            color: "rgba(255,255,255,0.5)",
+            background: "rgba(37, 211, 102, 0.1)",
+            border: "1px solid rgba(37, 211, 102, 0.5)",
+            color: "#25D366",
             padding: "0.42rem 0.95rem",
             fontSize: "0.68rem",
             fontFamily: "var(--font-montserrat)",
-            fontWeight: 600,
+            fontWeight: 800,
             letterSpacing: "0.07em",
             textTransform: "uppercase",
             cursor: "pointer",
-            transition: "all 0.2s",
+            transition: "all 0.3s ease",
+            boxShadow: "0 0 15px rgba(37, 211, 102, 0.1)",
+            borderRadius: "4px",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = "rgba(37, 211, 102, 0.2)";
+            e.currentTarget.style.boxShadow = "0 0 20px rgba(37, 211, 102, 0.2)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = "rgba(37, 211, 102, 0.1)";
+            e.currentTarget.style.boxShadow = "0 0 15px rgba(37, 211, 102, 0.1)";
           }}
         >
           WhatsApp

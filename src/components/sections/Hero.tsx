@@ -103,18 +103,33 @@ export function Hero() {
 
         <div className="hero-buttons" style={{ display: "flex", gap: 12, marginBottom: "3rem" }}>
           <button
-            onClick={scrollToCta}
+            onClick={() => window.location.href = "tel:+917439469915"}
             className="group"
             style={{
-              background: "linear-gradient(135deg, #f5a623, #e8890d)", color: "#000",
-              border: "none", padding: "0.85rem 1.6rem", fontSize: "0.68rem",
-              fontFamily: "var(--font-montserrat)", fontWeight: 900,
-              letterSpacing: "0.06em", textTransform: "uppercase", cursor: "pointer",
+              background: "linear-gradient(135deg, #f5a623, #e8890d)",
+              color: "#000",
+              border: "none",
+              padding: "0.85rem 1.6rem",
+              fontSize: "0.68rem",
+              fontFamily: "var(--font-montserrat)",
+              fontWeight: 900,
+              letterSpacing: "0.06em",
+              textTransform: "uppercase",
+              cursor: "pointer",
               boxShadow: "0 10px 30px rgba(245,166,35,0.2)",
-              display: "flex", alignItems: "center", gap: 8, whiteSpace: "nowrap"
+              display: "flex",
+              alignItems: "center",
+              gap: 8,
+              whiteSpace: "nowrap"
             }}
           >
-            Book Free Strategy Call <motion.span animate={{ x: [0, 4, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}></motion.span>
+            Book Free Strategy Call
+            <motion.span
+              animate={{ x: [0, 4, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5 }}
+            >
+              →
+            </motion.span>
           </button>
           <button
             onClick={() => window.open("https://wa.me/917439469915", "_blank")}

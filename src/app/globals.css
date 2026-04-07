@@ -187,6 +187,13 @@ body {
   }
 }
 
+
+@media (min-width: 410px) and (max-width: 470px) {
+  .changingHeading {
+    margin-left: 2rem;
+  }
+}
+
 @media (max-width: 480px) {
   .changingHeading {
     margin-left: 1rem;

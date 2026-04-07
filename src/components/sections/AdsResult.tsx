@@ -9,7 +9,7 @@ import { ImageModal } from "../ui/image-modal";
 const RESULTS = [
   {
     title: "E-commerce Growth",
-    metric: "4.8\u00D7 ROAS",
+    metric: "4.8+ ROAS",
     sub: "Return on Ad Spend",
     case: "Drove 50L+ in sales within 90 days of takeover."
   },

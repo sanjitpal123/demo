@@ -7,6 +7,7 @@ import { ParticleBackground } from "../ui/particle-background";
 import { BackgroundBeams } from "../ui/background-beams";
 import { BlurIn, GradualSpacing, TypingAnimation, VideoText } from "../ui/animations";
 import { IndianRupee } from "lucide-react";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
 
 const CAMPAIGNS = [
   { biz: "Irfa Family Salon", val: "38 leads \u00B7 46 CPL", hasRupee: true },
@@ -25,7 +26,7 @@ const NOTIFS = [
   { n: "New lead \u2014 Irfa Salon", m: "Appointment query via WhatsApp" },
   { n: "New lead \u2014 Auto Aura", m: "Google Ad enquiry received" },
   { n: "New lead \u2014 Zohra Style", m: "Meta form submission" },
-  { n: "New lead \u2014 Bengal Ice", m: "GMB call tracking triggered" },
+  { n: "New lead \u2014 Bengal Ice Agency", m: "GMB call tracking triggered" },
 ];
 
 export function Hero() {
@@ -143,6 +144,8 @@ export function Hero() {
             }}
           >
             Connect on WhatsApp
+            <IconBrandWhatsapp size={16} />
+
           </button>
         </div>
 

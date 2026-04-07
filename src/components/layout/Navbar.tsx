@@ -1,5 +1,7 @@
 "use client";
 
+import { IconBrandWhatsapp } from "@tabler/icons-react";
+
 export function Navbar() {
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -26,9 +28,9 @@ export function Navbar() {
       {/* Logo */}
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
         <img
-          src="/logo.jpeg"
+          src="/adslogo.png"
           alt="Go Ads Live Logo"
-          style={{ height: "58px", width: "auto", objectFit: "contain" }}
+          style={{ height: "100px", width: "auto", objectFit: "contain" }}
         />
       </div>
 
@@ -50,6 +52,7 @@ export function Navbar() {
             transition: "all 0.3s ease",
             boxShadow: "0 0 15px rgba(37, 211, 102, 0.1)",
             borderRadius: "4px",
+            display: "flex", alignItems: "center", gap: 6
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.background = "rgba(37, 211, 102, 0.2)";
@@ -60,6 +63,7 @@ export function Navbar() {
             e.currentTarget.style.boxShadow = "0 0 15px rgba(37, 211, 102, 0.1)";
           }}
         >
+          <IconBrandWhatsapp size={14} />
           WhatsApp
         </button>
         <button

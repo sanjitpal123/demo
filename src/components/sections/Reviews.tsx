@@ -11,7 +11,7 @@ const reviews = [
   },
   {
     name: "Bengal Fencing",
-    username: "Manufacturing · Kolkata",
+    username: "Ice Dealer · Kolkata",
     body: "The team is professional, responsive, and really understands how to deliver result. Love the result for my business.",
     img: "https://avatar.vercel.sh/bengal-f",
   },
@@ -46,8 +46,8 @@ const reviews = [
     img: "https://avatar.vercel.sh/bengal",
   },
   {
-    name: "Star India Care",
-    username: "Services · Kolkata",
+    name: "Home Appliance",
+    username: "Home Appliance · Kolkata",
     body: "The YouTube ad strategy combined with WhatsApp AI nurtured our leads perfectly. Excellent ROI.",
     img: "https://avatar.vercel.sh/star",
   },

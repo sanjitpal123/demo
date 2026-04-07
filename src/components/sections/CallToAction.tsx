@@ -4,6 +4,7 @@ import { VideoText, BlurIn, FadeUp } from "../ui/animations";
 import { DotGlowBg } from "../ui/backgrounds";
 import { BackgroundBeams } from "../ui/background-beams";
 import { ArrowUp } from "lucide-react";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
 
 export function CallToAction() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -88,9 +89,11 @@ export function CallToAction() {
               padding: "1.2rem 2.8rem", fontSize: "0.9rem",
               fontFamily: "var(--font-montserrat)", fontWeight: 700,
               letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer",
-              borderRadius: "8px"
+              borderRadius: "8px",
+              display: "flex", alignItems: "center", justifyContent: "center", gap: 12
             }}
           >
+            <IconBrandWhatsapp size={20} />
             Connect on WhatsApp
           </button>
         </div>

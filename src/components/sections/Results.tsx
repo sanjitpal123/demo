@@ -16,14 +16,14 @@ const PNUMS = [
   { n: 62, prefix: "↓", suffix: "%", l: "CPL reduction" },
 ];
 
-const CLIENTS = ["Irfa Family Salon", "Auto Aura", "Zohra Style", "Bengal Ice Agency", "Star India Care"];
+const CLIENTS = ["Irfa Family Salon", "Auto Aura", "Zohra Style", "Bengal Ice Agency", "Home Appliance"];
 
 const TESTIMONIALS = [
   { q: "Within 45 days we were getting consistent walk-ins. The WhatsApp system handles follow-ups automatically \u2014 we just focus on the service.", a: "Owner, Irfa Family Salon", n: "Salon \u00B7 Kolkata", img: "https://avatar.vercel.sh/irfa" },
   { q: "We were spending on ads before with zero results. Goadslive built a proper system \u2014 leads started coming in week 3. Absolute game changer.", a: "Owner, Auto Aura", n: "Automobile \u00B7 Kolkata", img: "https://avatar.vercel.sh/auto" },
   { q: "The GMB optimisation started bringing walk-ins on its own. Now we rank on Google Maps AND get Meta leads every day. Double impact.", a: "Owner, Zohra Style", n: "Fashion \u00B7 Kolkata", img: "https://avatar.vercel.sh/zohra" },
-  { q: "Their WhatsApp AI setup is magic. We don't miss a single enquiry now, even at night. Our booking rate has doubled.", a: "Founder, Star India Care", n: "Healthcare \u00B7 Kolkata", img: "https://avatar.vercel.sh/star" },
-  { q: "Finally a team that understands local business. The leads are high-quality and the CPL is lower than anything we've seen.", a: "Manager, Bengal Ice", n: "Manufacturing \u00B7 Howrah", img: "https://avatar.vercel.sh/bengal" },
+  { q: "Their WhatsApp AI setup is magic. We don't miss a single enquiry now, even at night. Our booking rate has doubled.", a: "Home Appliance", n: "Home Appliance \u00B7 Kolkata", img: "https://avatar.vercel.sh/star" },
+  { q: "Finally a team that understands local business. The leads are high-quality and the CPL is lower than anything we've seen.", a: "Bengal Ice Agency", n: "Ice Dealer \u00B7 Kolkata", img: "https://avatar.vercel.sh/bengal" },
   { q: "Goadslive transformed our digital presence. From ranking nowhere to being #1 on local search, the growth is visible.", a: "Proprietor, Royal Decor", n: "Interior Design \u00B7 Kolkata", img: "https://avatar.vercel.sh/royal" },
   { q: "The strategy call alone gave us more value than our previous agency did in a year. Highly professional and results-driven.", a: "Director, Elite Clinic", n: "Medical \u00B7 Salt Lake", img: "https://avatar.vercel.sh/elite" },
   { q: "I was skeptical about Meta Ads, but Goadslive proved me wrong. We are now booked for the next 2 months.", a: "Owner, Spice Route", n: "Restaurant \u00B7 Park Street", img: "https://avatar.vercel.sh/spice" },

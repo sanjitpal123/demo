@@ -15,9 +15,9 @@ export function Footer() {
       {/* Logo */}
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
         <img
-          src="/logo.jpeg"
+          src="/adslogo.png"
           alt="Go Ads Live Logo"
-          style={{ height: "64px", width: "auto", objectFit: "contain" }}
+          style={{ height: "100px", width: "auto", objectFit: "contain" }}
         />
       </div>
 
